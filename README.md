@@ -50,12 +50,14 @@ Built a data pipeline on AWS to process and analyze YouTube trending data from m
 
 ## Repository Structure
 
+```
 ├── lambda/ # Lambda transformation scripts (JSON → Parquet)
 ├── glue/ # AWS Glue ETL jobs (PySpark)
 ├── sql/ # Athena queries and analytics queries
 ├── architecture/ # Architecture diagram
 ├── sample_data/ # Sample dataset for reference/testing
 ├── README.md # Project overview
+```
 
 ## Future Improvements
 
