@@ -8,9 +8,7 @@ Built a data pipeline on AWS to process and analyze YouTube trending data from m
 
 ## Architecture 
 
-<img src = "youtube-architecture.png">
-
-## Data Pipeline
+![Architecture diagram](./youtube-architecture.png)
 
 1. Data Ingestion  
    - Uploaded raw CSV and JSON data to Amazon S3  
