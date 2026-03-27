@@ -1,6 +1,6 @@
 # Data Pipeline Youtube Analysis
 
-## End-to-end AWS data pipeline for processing and analyzing YouTube trending data
+End-to-end AWS data pipeline for processing and analyzing YouTube trending data
 
 ## Overview
 
@@ -8,7 +8,7 @@ Built a data pipeline on AWS to process and analyze YouTube trending data from m
 
 ## Architecture 
 
-![Architecture diagram](./youtube-architecture.png)
+<img alt="architecture diagram" src="architecture/youtube-architecture.png">
 
 1. Data Ingestion  
    - Uploaded raw CSV and JSON data to Amazon S3  
@@ -41,3 +41,30 @@ Built a data pipeline on AWS to process and analyze YouTube trending data from m
 5. Languages: Python, SQL  
 6. Libraries: Pandas, awswrangler  
 7. Data Formats: CSV, JSON, Parquet  
+
+## Performance Optimization
+
+- Reduced Athena query runtime from **8.547s to 1.416s (~83% improvement)**
+- Eliminated repeated joins by materializing a final analytics table
+- Partitioned data by region to reduce scanned data and improve query efficiency
+
+## Repository Structure
+
+├── lambda/ # Lambda transformation scripts (JSON → Parquet)
+├── glue/ # AWS Glue ETL jobs (PySpark)
+├── sql/ # Athena queries and analytics queries
+├── architecture/ # Architecture diagram
+├── sample_data/ # Sample dataset for reference/testing
+├── README.md # Project overview
+
+## Future Improvements
+
+- Add workflow orchestration (e.g., Airflow)
+- Support streaming ingestion (e.g., Kafka or Kinesis)
+- Implement data quality validation checks
+
+## Acknowledgment
+
+This project was inspired by an end-to-end data engineering tutorial by Darshil Parmar on YouTube.  
+
+The implementation in this repository was independently built and extended to reinforce understanding of AWS data pipelines, including data modeling, transformation, and performance optimization techniques.
