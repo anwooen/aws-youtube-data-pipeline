@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "snippet": {
+        "title": "Film & Animation"
+      }
+    },
+    {
+      "id": "10",
+      "snippet": {
+        "title": "Music"
+      }
+    },
+    {
+      "id": "17",
+      "snippet": {
+        "title": "Sports"
+      }
+    },
+    {
+      "id": "22",
+      "snippet": {
+        "title": "People & Blogs"
+      }
+    },
+    {
+      "id": "23",
+      "snippet": {
+        "title": "Comedy"
+      }
+    },
+    {
+      "id": "24",
+      "snippet": {
+        "title": "Entertainment"
+      }
+    },
+    {
+      "id": "25",
+      "snippet": {
+        "title": "News & Politics"
+      }
+    },
+    {
+      "id": "28",
+      "snippet": {
+        "title": "Science & Technology"
+      }
+    }
+  ]
+}
